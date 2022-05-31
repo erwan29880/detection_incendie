@@ -1,0 +1,8 @@
+train: ../yoloo/images/train/  # train images (relative to 'path') 128 images
+val: ../yoloo/images/val/  # val images (relative to 'path') 128 images
+
+
+# Classes
+nc: 2  # number of classes
+names: ['feu','incendie']  # class names
+
