@@ -1,10 +1,9 @@
 # Détection d'incendies avec Yolo (version5) et Streamlit
 
+
 ## Introduction : 
 
 Le but de l'application est faire la détection par webcam est temps réel, en faisant la distinction entre feu et incendie.   
-
-L'ordinateur à disposition, peu puissant, ne permet pas de traiter un flux vidéo constant, aussi l'application se fait en détection d'images pour test, mais doit faire l'impasse sur le traitement par webcam et le traitement de vidéos.  
 
 <u><i>éthique : </i></u>   
 
@@ -13,9 +12,11 @@ La vidéo-surveillance créé des entraves aux libertés individuelles et collec
 
 ## Application : 
 
-> exécuter les cellules du notebook <i>main.ipynb</i>
+> exécuter les cellules du notebook <i>main.ipynb</i> ou dans un terminal exécuter 'streamlit run app.py'.  Une autre application plus sure est disponible sans streamlit en exécutant le fichier 'python app_webcam.py' ; pressez esc pour sortir.   
 
+Vous avec besoin des bibloithèques numpy, streamlit et opencv pour l'exécution de l'application.
 
+### Si la capture vidéo ne fonctionne pas, changer la ligne 14 de app.py en fonction de votre id de périphérique de webcam !
 
 ## Labellisation de photos à partir le la webapp 'Make Sense'  
 
@@ -47,14 +48,13 @@ Labellisation des images manuellement, puis import des fichiers textes des label
     - labels :
         - 0 : feu
         - 1 : incendie
+- export des poids du modèle en .onnx, utilisable par opencv.
 
 ## Test en local : 
 
 > à partir d'une vidéo (<i>video.mp4</i>), détection des feux et incendies (<i>video_2.mp4</i>)   
 
-## Application : 
-
-seule la détection d'images est activée, pour cause de ressources RAM limitées.  
+ 
 
 
 ## Analyse
